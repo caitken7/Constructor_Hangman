@@ -12,7 +12,6 @@ function Word(target) {
 		}
 	};
 
-	// function that 
 	this.findWord = function() {
 		this.found = this.lettersArray.every(function(currLett) {
 			return currLett.appear;
@@ -20,12 +19,11 @@ function Word(target) {
 		return this.found;
 	};
 
-	// function that takes the letter guess and 
 	this.checkLetter = function(guessLetter) {
 		var toReturn = 0;
 
 		for (var i = 0; i < this.lettersArray.length; i++) {
-			if (this.lettersArray[i].charac == guessLetter){
+			if (this.lettersArray[i].charac === guessLetter){
 				this.lettersArray[i].appear = true;
 				toReturn++;
 			}

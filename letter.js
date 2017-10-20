@@ -1,3 +1,4 @@
+// letter function
 var letter = function(let){
 	this.charac = let;
 	this.appear = false;
